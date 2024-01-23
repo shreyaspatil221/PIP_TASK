@@ -29,7 +29,7 @@ const UserTable = ({ users, sortedColumn, sortOrder, handleSort, handleAddressCl
                         <td>{user.name}</td>
                         <td>{user.username}</td>
                         <td>{user.email}</td>
-                        <td onClick={() => handleAddressClick(user.address.geo)}>
+                        <td onClick={() => handleAddressClick(user.address.geo)} className='pointer'>
                             {user.address.street}, {user.address.suite}, {user.address.city}, {user.address.zipcode}
                         </td>
                         <td>{user.phone}</td>

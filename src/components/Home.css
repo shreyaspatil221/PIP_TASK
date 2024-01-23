@@ -49,3 +49,7 @@ th.sorted-desc::after {
     border: none;
     cursor: pointer;
 }
+
+.pointer {
+    cursor: pointer;
+}
