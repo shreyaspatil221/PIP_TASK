@@ -1,4 +1,5 @@
 import { inject } from '@vercel/analytics';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
@@ -9,7 +10,10 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render(<Home />);
+root.render(<>
+    <Home />
+    <SpeedInsights />
+</>);
 
 reportWebVitals();
 
