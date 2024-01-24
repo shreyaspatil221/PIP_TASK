@@ -1,3 +1,4 @@
+import { inject } from '@vercel/analytics';
 import 'bootstrap-icons/font/bootstrap-icons.css'; // Import Bootstrap Icons CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
@@ -11,3 +12,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Home />);
 
 reportWebVitals();
+
+inject();
+
